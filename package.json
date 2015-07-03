@@ -15,7 +15,7 @@
     "react-component",
     "ios",
     "version",
-    "NSBundle",
+    "NSBundle"
   ],
   "author": {
     "name": "Jean-Alexandre Iragne"

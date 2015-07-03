@@ -1,0 +1,34 @@
+{
+  "name": "react-native-app-info",
+  "version": "0.0.1",
+  "description": "React Native app info and version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:Iragne/react-native-app-info.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "version",
+    "NSBundle",
+  ],
+  "author": {
+    "name": "Jean-Alexandre Iragne"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "react-native": "^0.6.0"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.6 <1.0.0"
+  },
+  "_id": "react-native-app-info@0.0.1",
+  "_from": "react-native-app-info@*",
+
+
+}

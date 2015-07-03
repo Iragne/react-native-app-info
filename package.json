@@ -28,7 +28,5 @@
     "react-native": ">=0.6 <1.0.0"
   },
   "_id": "react-native-app-info@0.0.1",
-  "_from": "react-native-app-info@*",
-
-
+  "_from": "react-native-app-info@*"
 }

@@ -5,7 +5,7 @@
 //
 
 #import "RNAppInfo.h"
-
+#import "RCTBridge.h"
 
 @implementation RNAppInfo
 RCT_EXPORT_MODULE();
@@ -25,4 +25,8 @@ RCT_EXPORT_MODULE();
              @"displayName": displayName,
     };
 }
+RCT_EXPORT_METHOD(setNetworkActivityIndicatorVisible:(BOOL)active) {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:active];
+}
+
 @end

@@ -18,6 +18,10 @@ var AppInfo = {
 	},
 	getInfoDisplayName: function (){
 		return RNAppInfo.displayName;
+	},
+	setNetworkActivityIndicatorVisible: function (visible) {
+		var appInfo = require('react-native').NativeModules.RNAppInfo;
+		appInfo.setNetworkActivityIndicatorVisible(visible);
 	}
 };
 

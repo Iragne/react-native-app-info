@@ -4,7 +4,9 @@
 
 ## Installation
 
-`$ npm install react-native-app-info`
+1. `$ npm install react-native-app-info --save`
+2. In Xcode, add the `RNAppInfo.xcodeproj` file to your project’s `Libraries` directory.
+3. In Xcode, add `libRNAppInfo.a` to the `Link Binary With Libraries` list in Build Phases.
 
 
 ## Usage

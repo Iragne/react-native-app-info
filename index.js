@@ -20,8 +20,12 @@ var AppInfo = {
 		return RNAppInfo.displayName;
 	},
 	setNetworkActivityIndicatorVisible: function (visible) {
-		var appInfo = require('react-native').NativeModules.RNAppInfo;
-		appInfo.setNetworkActivityIndicatorVisible(visible);
+		if (Platform.OS === 'ios') {
+			var appInfo = require('react-native').NativeModules.RNAppInfo;
+			appInfo.setNetworkActivityIndicatorVisible(visible);
+		} else {
+			console.warn('setNetworkActivityIndicatorVisible function not supported by Android');
+		}
 	}
 };
 

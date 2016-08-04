@@ -18,6 +18,10 @@
     "NSBundle"
   ],
   "author": "Jean-Alexandre Iragne",
+  "contributors": [{
+    "name": "instea",
+    "email": "instea@instea.co"
+  }],
   "license": "MIT",
   "devDependencies": {
     "react-native": "^0.6.0"

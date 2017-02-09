@@ -5,7 +5,11 @@
 //
 
 #import "RNAppInfo.h"
+#if __has_include("RCTBridge.h")
 #import "RCTBridge.h"
+#else
+#import <React/RCTBridge.h>
+#endif
 
 @implementation RNAppInfo
 RCT_EXPORT_MODULE();
@@ -17,10 +21,10 @@ RCT_EXPORT_MODULE();
     NSString *displayName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     if(displayName == nil)
         displayName = @"";
-    
+
     NSString *iosVersion = [[UIDevice currentDevice] systemVersion];
     NSString *infoDeviceName = [[UIDevice currentDevice] name];
-    
+
     return @{
              @"version": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"],
              @"shortVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
@@ -29,7 +33,7 @@ RCT_EXPORT_MODULE();
              @"displayName": displayName,
              @"getInfoiOS":iosVersion,
              @"getInfoDeviceName":infoDeviceName,
-             
+
     };
 }
 RCT_EXPORT_METHOD(setNetworkActivityIndicatorVisible:(BOOL)active) {
